@@ -1,0 +1,13 @@
+$first-color: #6eac99;
+$second-color: #2a9d8f;
+$border: 1px solid $second-color;
+.dashboard-container {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: $first-color;
+    border: $border;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #efe6de;
+}

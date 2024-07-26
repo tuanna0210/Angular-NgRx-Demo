@@ -1,0 +1,12 @@
+<div class="todos">
+    <div class="todos__add-todo">
+        <input class="todos__name" type="text" name="todo" [(ngModel)]="todo">
+        <button type="button" (click)="addTodo()">Add todo</button>
+    </div>
+    <div class="todos__list">
+        <div class="todo-item" *ngFor="let todo of (allTodos$ | async) as allTodos">
+            <span>{{ todo.content }}</span>
+            <button (click)="deleteTodo(todo)">Delete</button>
+        </div>
+    </div>
+</div>
